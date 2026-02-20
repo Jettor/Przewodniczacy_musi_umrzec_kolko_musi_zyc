@@ -62,6 +62,6 @@ label end:
     show maksym silly at right
     with dissolve
     m "Meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow."
-    m "Meow meow meow meow."
+    m "Meow meow meow meow meow."
 
     return
