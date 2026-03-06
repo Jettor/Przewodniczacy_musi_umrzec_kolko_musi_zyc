@@ -17,7 +17,7 @@ label mapMenu:
             ypos 970
             idle "parter idle.png"
             hover "parter hover.png"
-            #action Jump("room_parter")
+            action Jump("room_parter")
 
         #18.16
         imagebutton:

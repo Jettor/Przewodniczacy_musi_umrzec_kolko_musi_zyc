@@ -5,10 +5,12 @@
 
 define m = Character("Maksym")
 define c = Character("Ziomek", color="#f19ced")
+define m_affection = 5
 # The game starts here.
+
 label start:
     play music "music background.mp3"
-    #call screen mapScreen
+    call screen mapScreen
     scene bg classroom1
 
     # This shows a character sprite. A placeholder is used, but you can
@@ -27,9 +29,11 @@ label start:
 
 menu:
     "Meow meow":
+        $m_affection -= 1
         jump meow2
 
     "Meow meow meow":
+        $m_affection += 1
         jump meow3
 
 label meow2:
@@ -58,8 +62,14 @@ label end:
     with fade
     show maksym silly at right
     with dissolve
+
     m "Meow meow meow meow meow meow meow meow meow meow meow meow meow meow meow."
-    m "Meow meow meow meow meow."
+    if m_affection > 5:
+        m "Meow meow meow meow meow."
+    elif m_affection < 5:
+        m "SHUT YO BITCH ASS UP!!!"
+    else:
+        m "Meow?"
 
     return
 
