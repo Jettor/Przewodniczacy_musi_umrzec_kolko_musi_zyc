@@ -9,7 +9,10 @@ label mapMenu:
             ypos 120
             idle "rim idle.png"
             hover "rim hover.png"
+            sound "sound_tap.mp3"
             action Jump("room_rim")
+            
+
 
         #Parter
         imagebutton:
@@ -17,6 +20,7 @@ label mapMenu:
             ypos 970
             idle "parter idle.png"
             hover "parter hover.png"
+            sound "sound_tap.mp3"
             action Jump("room_parter")
 
         #18.16
@@ -25,6 +29,7 @@ label mapMenu:
             ypos 190
             idle "18_16 idle.png"
             hover "18_16 hover.png"
+            sound "sound_tap.mp3"
             action Jump("room_1816")
         
         #4 pietro/dziekanat
@@ -33,4 +38,5 @@ label mapMenu:
             ypos 750
             idle "4p idle.png"
             hover "4p hover.png"
+            sound "sound_tap.mp3"
             action Jump("room_dziekanat")
