@@ -94,26 +94,18 @@ style frame:
 ## and id "window" to apply style properties.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#say
+transform namebox_rotate():
+    rotate -4
 
 screen say(who, what):
-
+    style_prefix "say"
     window:
         id "window"
-
         if who is not None:
-
-            window:
-                id "namebox"
+            window at namebox_rotate:
                 style "namebox"
                 text who id "who"
-
         text what id "what"
-
-
-    ## If there's a side image, display it above the text. Do not display on the
-    ## phone variant - there's no room.
-    if not renpy.variant("small"):
-        add SideImage() xalign 0.0 yalign 1.0
 
 
 ## Make the namebox available for styling through the Character object.
@@ -149,6 +141,8 @@ style namebox:
 
 style say_label:
     properties gui.text_properties("name", accent=True)
+    outlines [(4, "#ffffff",0,0)]
+    kerning 10 
     xalign gui.name_xalign
     yalign 0.5
 
@@ -352,13 +346,17 @@ style navigation_button_text:
 ## Used to display the main menu when Ren'Py starts.
 ##
 ## https://www.renpy.org/doc/html/screen_special.html#main-menu
+transform bg_zoom(zoom_lvl):
+    zoom zoom_lvl
+    xcenter 0.5
+    ycenter 0.5
 
 screen main_menu():
 
     ## This ensures that any other menu screen is replaced.
     tag menu
 
-    add gui.main_menu_background
+    add gui.main_menu_background at bg_zoom(0.5)
 
     ## This empty frame darkens the main menu.
     frame:

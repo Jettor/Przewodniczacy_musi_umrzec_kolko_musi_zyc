@@ -1,10 +1,17 @@
 #character definitions
-define you = Character("You", color="#6e27b1")
-define alex = Character("Alex", color="#721517") 
-define fern = Character("Fern", color="#66d342")
-define leo = Character("Leo", color="#1c1fd6")
-define zoe = Character("Zoe", color="#dec95f")
-define iris = Character("Iris", color="#6e27b1")
+define you = Character("You ", color="#6e27b1")
+define alex = Character("Alex", color="#C24866") 
+define fern = Character("Fern", color="#7C826B")
+define leo = Character("Leo ", color="#774B45")
+define zoe = Character("Zoe ", color="#AF7D51")
+define iris = Character("Iris ", color="#8D71AC")
+
+#"???" character definitions
+define unknown_alex = Character("??? ", color="#C24866") 
+define unknown_fern = Character("??? ", color="#7C826B")
+define unknown_leo = Character("??? ", color="#774B45")
+define unknown_zoe = Character("??? ", color="#AF7D51")
+define unknown_iris = Character("??? ", color="#8D71AC")
 
 #nvl character definitions
 define player = Character("You", kind=nvl) #The name of the main character, used to place them on the screen

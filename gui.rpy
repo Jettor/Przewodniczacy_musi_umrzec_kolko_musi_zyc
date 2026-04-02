@@ -87,7 +87,7 @@ define gui.title_text_size = 75
 ## Main and Game Menus #########################################################
 
 ## The images used for the main and game menus.
-define gui.main_menu_background = "gui/main_menu.png"
+define gui.main_menu_background = "gui/startingscreen_concept.png"
 define gui.game_menu_background = "gui/game_menu.png"
 
 
@@ -107,7 +107,7 @@ define gui.textbox_yalign = 0.96
 ## The placement of the speaking character's name, relative to the textbox.
 ## These can be a whole number of pixels from the left or top, or 0.5 to center.
 define gui.name_xpos =370
-define gui.name_ypos = -40
+define gui.name_ypos = -91
 
 ## The horizontal alignment of the character's name. This can be 0.0 for left-
 ## aligned, 0.5 for centered, and 1.0 for right-aligned.
